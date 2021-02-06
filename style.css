@@ -1,0 +1,126 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Oswald',sans-serif;
+}
+
+.content{
+    
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black;  
+    
+}
+.content img{
+    width:100%;
+    height: 100vh;
+    filter: blur(2px);
+
+}
+h1{ 
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color:white;
+    font-size: 60px;
+    letter-spacing: 5px;
+    
+}
+.countdown-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns:auto auto auto auto;
+    grid-gap:40px;
+}
+.countdown-container .countdown-el {
+    color:white;
+    text-align: center;
+    background-color:rgba(0,0,0,0.6);
+    padding : 15px 15px;
+    border-radius: 10px;
+    box-shadow: 1px 7px 9px 4px black;
+}
+.countdown-container .countdown-el p{
+    font-size:35px;
+    font-weight: 600;
+
+}
+.countdown-container .countdown-el span{
+    font-size: 20;
+    padding:15px
+}
+.quote{
+    position: absolute;
+    top:70%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-size:20px;
+
+}
+@media screen and (max-width: 768px){
+    .countdown-container{
+        position: absolute;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    h1{ 
+        top:15%;
+        letter-spacing: 1px;
+        
+    }
+    .countdown-container .countdown-el p{
+        font-size:27px;
+        font-weight: 600;
+    
+    }
+    .countdown-container .countdown-el span{
+        font-size: 18px;
+        padding:15px
+    }
+    .quote{
+        top:85%;
+        left:50%;
+        font-size:20px;
+    
+    }
+}
+@media screen and (max-width: 475px){
+    .countdown-container{
+        position: absolute;
+        display: grid;
+        grid-template-columns: auto ;
+    }
+    h1{ 
+        display: flex;
+        top:7%;
+        font-size: 26px;
+        letter-spacing: 0px;
+        
+    }
+    .countdown-container .countdown-el p{
+        font-size:25px;
+        font-weight: 600;
+    
+    }
+    .countdown-container .countdown-el span{
+        font-size: 15px;
+        padding:15px
+    }
+    .quote{
+        top:93%;
+        left:50%;
+        font-size:16px;
+    
+    }
+}
