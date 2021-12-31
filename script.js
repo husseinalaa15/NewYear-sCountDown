@@ -1,7 +1,7 @@
 // first month is 00 , Js counts it from 0 to 11 
 
 
-let newYear = new Date(2022,01,01);
+let newYear = new Date(2022,00,01);
 let secLeft = document.querySelector("#sec"); 
 let minLeft = document.querySelector("#mins"); 
 let hursLeft = document.querySelector("#hurs"); 
